@@ -101,7 +101,7 @@ margin-right: 0;
   
 }
 
- .header-menu-separator{
+ .header-menu-separator {
     color: black;
     flex: 0 0 auto;
     
@@ -179,8 +179,12 @@ margin-right: 0;
   font-family: "Raleway", sans-serif;
 }
 
-.cover-word-ono { justify-self: start; }
-.cover-word-tebe { justify-self: center; }
+.cover-word-ono { 
+    justify-self: start;
+ }
+.cover-word-tebe { 
+    justify-self: center;
+ }
 .cover-word-nado { 
     justify-self: end;
     display:block;
@@ -292,10 +296,10 @@ font-size: 20px;
     left: 40px;
     right: 40px;
 }
-.lots-more {
 
 
-}
+
+
 
 .about {
 
