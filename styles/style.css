@@ -9,9 +9,13 @@ display: block;
 
 }
 
-h1,h2,h3,p,ul,ul { 
-     margin:  0;
-     padding: 0;
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -315,12 +319,12 @@ margin-top: 35px;
     gap: 100px;
     padding-top: 136px;
     line-height: 1;
-    color: rgb#0000;
+    color: #000;
     grid-row: span 2;
     grid-column: 2;
 }
 .about-title {
-    margin: 0 0 24;
+    margin: 0 0 24px;
     font-family: "Raleway", sans-serif;
     font-size: 40px;
     line-height: 1;
