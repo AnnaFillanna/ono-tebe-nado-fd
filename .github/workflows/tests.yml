@@ -1,13 +1,24 @@
 name: Tests
 
-on: [push]
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - '**'
 
 jobs:
-  test:
+  tests:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Run tests
-        uses: yandex-praktikum/frontend-project-lvl1-tests@v1
+      - name: Check if the repository is private
+        run: exit 1
+        if: ${{ github.event.repository.private }}
+
+      - name: Tests
+        uses: Yandex-Practicum/test-project-action@v1
+        with:
+          project: 'ono-tebe-nado'
