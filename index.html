@@ -16,7 +16,7 @@
         <nav class="header-menu" aria-label="Основное меню">
           <ul class="header-menu-list">
             <li class="header-menu-item header-menu-item-active">
-              <span class="header-menu-link" >главная</span>
+              <a class="header-menu-link header-menu-link-active" href: >главная</a>
             </li>
             <li class="header-menu-item">
               <a class="header-menu-link" href="#lots">посмотреть лоты</a>
@@ -32,15 +32,14 @@
           <img
             class="header-logo-image"
             src="./images/logo.png"
-            alt="Логотип Оно тебе надо"
-          >
-        </a>
+            alt="Логотип Оно тебе надо">
+         </a>
 
-        <address class="header-contacts">
-          <a class="header-contacts-link" href="tel:+99995555555">+9&nbsp;999&nbsp;555&nbsp;5555</a>
-          <a class="header-contacts-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <span class="header-contacts-text">наб. Принсенграхт 263–</span>
-          <span class="header-contacts-text">265, Амстердам</span>
+        <address class="contacts contacts-place-header">
+          <a class="contacts-link" href="tel:+99995555555">+9&nbsp;999&nbsp;555&nbsp;5555</a>
+          <a class="contacts-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <span class="contacts-text">наб. Принсенграхт 263–</span>
+          <span class="contacts-text">265, Амстердам</span>
         </address>
       </div>
     </div>
@@ -73,6 +72,7 @@
 
       <ul class="lots-list">
         <li class="lots-item">
+          <a class="card-link" hrew="#">
           <article class="card card-type-film">
            <div class="overlay"></div>
             <h3 class="card-title">Фильм режиссёра, который бросил киношколу</h3>
@@ -81,9 +81,11 @@
               если бы вы не знали, что режиссёр — Пол Томас Андерсон?
             </p>
           </article>
+        </a>
         </li>
 
         <li class="lots-item">
+           <a class="card-link" hrew="#">
           <article class="card card-type-book">
             <div class="overlay"></div>
             <h3 class="card-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
@@ -94,9 +96,11 @@
               на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
             </p>
           </article>
+           </a>
         </li>
 
         <li class="lots-item">
+           <a class="card-link" hrew="#">
           <article class="card card-type-picture">
             <div class="overlay"></div>
             <h3 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
@@ -106,6 +110,7 @@
               поставили, если бы не знали, что это — одна из революционных работ Кандинского?
             </p>
           </article>
+           </a>
         </li>
       </ul>
 
@@ -128,7 +133,7 @@
             Кому нужны все эти странные вещи, созданные любителями?
           </p>
 
-          <p class="about-text about-text-second">
+          <p class="about-text about-text-offset">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах
             растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными.
             Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно
@@ -141,32 +146,34 @@
   </main>
 
   <footer class="footer">
-    <address class="footer-contacts">
-      <a class="footer-phone" href="tel:+99995555555">+9&nbsp;999&nbsp;555&nbsp;5555</a>
-      <a class="footer-email" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-      <span class="footer-address">наб. Принсенграхт 263–265,</span>
-      <span class="footer-address">Амстердам</span>
+     <address class="contacts contacts-place-footer">
+   <a class="contacts-link" href="tel:+99995555555">+9&nbsp;999&nbsp;555&nbsp;5555</a>
+          <a class="contacts-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <span class="contacts-text">наб. Принсенграхт 263–265,</span>
+          <span class="contacts-text">Амстердам</span>
     </address>
 
     <nav class="footer-menu" aria-label="Нави в подвале">
       <ul>
-        <li><span class="footer-menu-title" >главная</span></li>
+        <li><a class="footer-menu-link-active" href="#">главная</a></li>
         <li><a class="footer-menu-link" href="#lots">посмотреть лоты</a></li>
         <li><a class="footer-menu-link" href="#about">об аукционе</a></li>
       </ul>
     </nav>
 
     <div class="footer-socials">
-      <a class="footer-socials-link" href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-        <img class="youtube" src="./images/youtube.png" alt="YouTube">
-      </a>
-      <a class="footer-socials-link" href="https://vk.com" target="_blank" rel="noopener noreferrer">
-        <img class="vk" src="./images/vk.png" alt="VK">
-      </a>
-      <a class="footer-socials-link" href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
-        <img class="pinterest" src="./images/pinterest.png" alt="Pinterest">
-      </a>
-    </div>
+  <a class="footer-socials-link" href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+    <img class="footer-social-icon" src="./images/youtube.png" alt="YouTube">
+  </a>
+
+  <a class="footer-socials-link" href="https://vk.com" target="_blank" rel="noopener noreferrer">
+    <img class="footer-social-icon vk-icon" src="./images/vk.png" alt="VK">
+  </a>
+
+  <a class="footer-socials-link" href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
+    <img class="footer-social-icon pinterest-icon" src="./images/pinterest.png" alt="Pinterest">
+  </a>
+</div>
   </footer>
 </body>
 </html>
